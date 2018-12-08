@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Concept Hub Classes</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Best coaching classes in Tanda Ambedkar Nagar, For entrance of AMU, JMI and Polytechnic"/>
+    <meta name="Keywords" content="Coaching,Institute,AMU,JMI,Polytechnic,Crash Course,Concept,Concept Hub,Concept Hub Classes,Concept classes,Classes Hub"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link href="css/slick.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='css/jquery.circliful.css'>  
+    <link rel="stylesheet" href="css/animate.css">
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />
+    <link id="switcher" href="css/themes/green-theme.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="css/jquery.min.js"><\/script>')</script>
+	<script>
+    (function($) {
+        $(function() {
+            if ($('body').css('color') !== 'rgb(51, 51, 51)') {
+                $('head').prepend('<link rel="stylesheet" href="css/bootstrap.min.css">');
+            }
+        });
+    })(window.jQuery);
+	</script>
+    <script>
+        $(document).ready(function(){
+            $("#lang option:eq(1)").attr("selected","selected");
+            $("#lang").on("change", function(){
+				var $this = $(this).val();
+				if($this == 2){
+					location.href = "index1.html";
+				}
+			});
+            var $contactForm = $('#contact1'), $submit = $("input[type='submit']"), $name = $("input[name='name']"), $email = $("input[name='email']"), $phone = $("input[name='phone']");
+            var $modal = $("#myModal"), $modalLabel = $("#myModalLabel"), $modalBody = $(".modal-body");
+            var form_data = $("form").serialize(), form_url = $("form").attr("action"), form_method = $("form").attr("method").toUpperCase();
+            $submit.click(function(event){
+                event.preventDefault();  
+                    var reName = /^[A-Za-z ]{2,20}$/;
+                    var is_name=reName.test($name.val());
+                    var reMail = /^[A-Za-z0-9._]{2,15}\@[a-zA-Z0-9-]{2,15}\.[a-zA-Z.]{2,10}$/;
+                    var is_email=reMail.test($email.val());
+                    var rePhone = /^[7|8|9]{1}[0-9]{9}$/;
+					var is_phone=rePhone.test($phone.val());
+					if(!is_name){
+                        $modal.modal("show");
+                        $modalLabel.text("Error!");
+                        $modalBody.text('Please enter a valid name');
+                    }
+					else if(!is_email){
+                        $modal.modal("show");
+                        $modalLabel.text("Error!");
+                        $modalBody.text('Please enter a valid email address');
+                    }
+				    else if(!is_phone){
+                        $modal.modal("show");
+                        $modalLabel.text("Error!");
+                        $modalBody.text('Please enter a valid phone number');
+                    }            
+                    else{
+                    $.ajax({
+                            url: 'https://formspree.io/concepthubclasses@gmail.com',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            dataType: 'json',
+                            beforeSend: function() {
+                                $submit.val('Sending message...');
+                            },
+                            success: function(data) {
+                                $modal.modal("show");
+                                $modalLabel.text("Success!");
+                                $modalBody.text('Your message has been successfully sent!');
+                                $submit.val('Sent');
+                                $("input[type='text']").val("");
+                                $("input[type='email']").val("");
+                                $("textarea").val("");
+                            },
+                            error: function(err) {
+                                $modal.modal("show");
+                                $modalLabel.text("Error!");
+                                $modalBody.text('Ops, there was an error.');
+                                $submit.val('Send');
+                            }
+                        });
+                    }
+                });
+    });
+    </script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+	  <script>
+			$(document).ready(function(){
+				$("[class~='wow']").each(function(){
+					$(this).removeClass("wow");
+				});
+			});
+		</script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="wpcf7-submit" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="scrollToTop" href="#"></a>
+    <header id="header">
+      <div class="menu_area" id="Home">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+			  <a href="index.html"><img class="logo responsive" src="img/logo.png" alt="logo"/></a>
+              <a class="navbar-brand" href="index.html">Concept Hub <span>Classes</span></a>              
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Reviews</a></li>               
+                <li><a href="#">Contact</a></li>
+                <li><select id="lang" class="form-control">
+                        <option value="0">Choose Language</option>
+                        <option value="1">English</option>
+                        <option value="2">Hindi</option>
+                    </select>
+                </li>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+    </header>
+    <section id="slider">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="slider_area">
+            <div id="slides">
+              <ul class="slides-container">                          
+                <li>
+                  <img src="img/slider/1.jpg" alt="img">
+                  <div class="slider_caption slider_right_caption">
+                    <marquee class="running">Special Crash Course Classes for AMU, JMI, BHU and UP Polytechnic/Diploma</marquee>
+                    <h2>Better Education Environment</h2>
+                    <p>Concept Hub Classes is a Coaching academy which deals into providing quality education to the students. We believe that every student needs personal attention to explore his/her true potential.</p>
+                  </div>
+                  </li>
+                <li>
+                  <img src="img/slider/2.jpg" alt="img">
+                   <div class="slider_caption slider_right_caption">
+                    <marquee class="running">Special Crash Course Classes for AMU, JMI, BHU and UP Polytechnic/Diploma</marquee>
+                    <h2>Better Education Environment</h2>
+                    <p>Concept Hub Classes is a Coaching academy which deals into providing quality education to the students. We believe that every student needs personal attention to explore his/her true potential.</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/slider/3.jpg" alt="img">
+                  <div class="slider_caption slider_right_caption">
+                    <marquee class="running">Special Crash Course Classes for AMU, JMI, BHU and UP Polytechnic/Diploma</marquee>
+                    <h2>Better Education Environment</h2>
+                    <p>Concept Hub Classes is a Coaching academy which deals into providing quality education to the students. We believe that every student needs personal attention to explore his/her true potential.</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/slider/4.jpg" alt="img">
+                  <div class="slider_caption slider_right_caption">
+                    <marquee class="running">Special Crash Course Classes for AMU, JMI, BHU and UP Polytechnic/Diploma</marquee>
+                    <h2>Better Education Environment</h2>
+                    <p>Concept Hub Classes is a Coaching academy which deals into providing quality education to the students. We believe that every student needs personal attention to explore his/her true potential.</p>
+                  </div>
+                </li>
+              </ul>
+              <nav class="slides-navigation">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aboutUs">
+      <div class="container" id="About">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="aboutus_area wow fadeInLeft">
+            <h2 class="titile">About Us</h2>
+             <span></span>
+            <p>Concept Hub Classes believes the function of education is to teach one to think intensively and to think critically. Professional competence to teach the subject. Located in a central place with adequate infrastructure, extra space to keep their personal belongings. Providing quality education, study material, competent staff, online help from experts. We have been providing one of the finest coaching programmes for school level subject for quite done time now. Our cooperative and knowledgeable teachers will help you out of your study woes and bring smile on your face. There are many differences between classroom teaching and off-school tutoring methodologies. With this in mind, the CHC team worked with other academics to create the unique Tutoring System (the CHC), which is based on Richard E. Mayer’s ‘Cognitive Theory of Multimedia Learning’. The CHC is a highly structured academic system. Through the use of a 9-stage lesson organizational structure. CHC includes the use of cognitive tools such as Mind Mapping, self-diagnosis tools such as Comfort Boxes, and Learning Outcomes that are highly student centric.</p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    <section id="whyUs">
+      <div class="row">        
+        <div class="col-lg-12 col-sm-12">
+          <div class="whyus_top">
+            <div class="container">
+              <!-- Why us top titile -->
+              <div class="row">
+                <div class="col-lg-12 col-md-12"> 
+                  <div class="title_area">
+                    <h2 class="title_two">Why Us</h2>
+                    <span></span> 
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-desktop"></span>
+                    </div>
+                    <h3>Technology Awareness</h3>
+                    <p>To walk parallely with technologies leads to the well admire destination. We mix education and technologies and impart to our student so that they can overcome with ability to intract with real world.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-users"></span>
+                    </div>
+                    <h3>Best Faculty</h3>
+                    <p>We have best faculty, providing excellence education and guidance to our students and make them field competitor.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-flask"></span>
+                    </div>
+                    <h3>Practical Training</h3>
+                    <p>We beleive in practical training. We are providing best suitable infrastructure where our students can explore more.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-support"></span>
+                    </div>
+                    <h3>Support</h3>
+                    <p>We're providing best support and guidence to our students and recognizing well furnished talent inside him where they can make their own personality. We believe in "If you have past that perticularlly, not proud of it doesn't means, you can't have a promising future".</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <section id="ourCourses">
+      <div class="container" id="Courses">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">Our Courses</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ourCourse_content">
+              <ul class="course_nav">
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-1.jpg" alt="Course Image"/>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Class I - V</a></h3>
+                    <p class="singCourse_price">Subjects</p>
+                    <p>Special Education, Science, Physics, Mathmetics, History, Hindi, Computer, English</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-2.jpg" alt="Course Image"/>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Class VI - VIII</a></h3>
+                    <p class="singCourse_price">Subjects</p>
+                    <p>Commerce Subjects, Economics, English, Geography, Hindi, History, Chemistry, Mathematics, Physics, Biology, Special Education, Social Studies</p>
+                    </div>
+                  </div>
+                </li> 
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-3.jpg" alt="Course Image"/>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Class IX - X</a></h3>
+                    <p class="singCourse_price">Subjects</p>
+                    <p>Economics, Commerce Subjects, Chemistry, Biology, Algebra, English, Geography, Hindi, Physics, Mathematics, History</p>
+                    </div>
+                  </div>
+                </li>  
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-4.jpg" alt="Course Image"/>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Class XI - XII</a></h3>
+                    <p class="singCourse_price">Subjects</p>
+                    <p>Chemistry, Commerce Subjects, Economics, English, Algebra, Biology, Botany, Mathematics, Political Science, Physics, Statistics, Home Science, History, Hindi, Geography, Sociology</p>
+                    </div>
+                  </div>
+                </li>                 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourTutors">
+      <div class="container" id="Faculty">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">Our Faculty</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ourTutors_content">
+              <!-- Start Tutors nav -->
+              <ul class="tutors_nav">
+			  <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/asif.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Asif</h3>
+                      <span>Managing Director</span>
+                      <p>Qualification - B.Com. and MSW</p>
+                      <p>Email - <a href="mailto:mohdasif212@gmail.com">mohdasif212@gmail.com</a></p>
+                      <p>Contact No. -  8960357410</p>
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/zees.jpg" alt="Teacher"/>                  
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Zeeshan Adil</h3>
+                      <span>Career Consultant</span>
+                      <p>Qualification - B.Tech.</p>
+                      <p>Email - <a href="mailto:zees007@rediffmail.com">zees007@rediffmail.com</a></p>
+                      <p>Contact No. -  9899551691</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/athar.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Athar</h3>
+                      <span>Chemistry Teacher</span>
+                      <p>Qualification - B.Sc. and BTC</p>
+                      <p>Email - <a href="mailto:atharamu5315@gmail.com">atharamu5315@gmail.com</a></p>
+                      <p>Contact No. -  7669814423</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/tarique.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Tarique</h3>
+                      <span>Physics Teacher</span>
+                      <p>Qualification - B.Sc. and B.Ed.</p>
+                      <p>Email - <a href="mailto:tariqmd93@gmail.com">tariqmd93@gmail.com</a></p>
+                      <p>Contact No. -  7275929850</p>
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/salman.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Salman Anis</h3>
+                      <span>Physics Teacher</span>
+                      <p>Qualification - B.Tech.</p>
+                      <p>Email - <a href="mailto:salmananis5@gmail.com">salmananis5@gmail.com</a></p>
+                      <p>Contact No. -  8604589822</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/raziq.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Razique</h3>
+                      <span>Math Teacher</span>
+                      <p>Qualification - B.Sc. and B.Ed.</p>
+                      <p>Email - <a href="mailto:raziquemd99@gmail.com">raziquemd99@gmail.com</a></p>
+                      <p>Contact No. -  9044077804</p>
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/anwar.jpg" alt="Teacher"/>                  
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Anwar</h3>
+                      <span>Math Teacher</span>
+                      <p>Qualification - B.Sc. and BTC</p>
+                      <p>Email - <a href="mailto:mohdanwar5330@gmail.com">mohdanwar5330@gmail.com</a></p>
+                      <p>Contact No. -  8423728810</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/alam.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd Alam</h3>
+                      <span>Math Teacher</span>
+                      <p>Qualification - B.Sc.</p>
+                      <p>Email - <a href="mailto:alamm037@gmail.com">alamm037@gmail.com</a></p>
+                      <p>Contact No. -  9044317063</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/shams.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Shamsul Laqa</h3>
+                      <span>Physics Teacher</span>
+                      <p>Qualification - Diploma and B. Tech(EE)</p>
+                      <p>Email - <a href="mailto:laqashams5272@gmail.com">laqashams5272@gmail.com</a></p>
+                      <p>Contact No. -  8604783829</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/sultan.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Sultan Altamash</h3>
+                      <span>Biology Teacher</span>
+                      <p>Qualification - B.Sc, M.Sc, B.ed. &amp; MA(Education)</p>
+                      <p>Email - <a href="mailto:laqashams5272@gmail.com">saltamash490@gmail.com</a></p>
+                      <p>Contact No. -  8604783829</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="studentsTestimonial">
+      <div class="container" id="Reviews">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">What our Student says</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="studentsTestimonial_content">              
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>I am proud to be student at Concept Hub Classes. It provides the environment where students actually needs to prepare for academic as well as competitions, Its just like Gurukul where teachers like guru and were like there shisheya.</p>
+                    </div>
+                    <div class="stsTestimonial_content">
+                      <h3>Tabish Hasan</h3>                      
+                      <span>Student</span>
+					  <p>DAV Academy Tanda</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>I personally Thanks to All the Concept Hub Classes Faculties and the Management support for making my academic career. I especially thank to core CHC Team who has gone extra mile for me and helped a lot even after coaching classes with the personal doubt clearing sessions and concept understanding.</p>
+                    </div>
+                    <div class="stsTestimonial_content">
+                      <h3>Syed Ayaan Ahmad</h3>                      
+                      <span>Student</span>
+                      <p>AMU +2</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single student testimonial -->
+                <!-- start single student testimonial -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>Concept Hub Classes is one of the best Coaching providing Academic Coaching in Tanda. I'm writing this review because they taught me in a very well direction and now I'm very grateful to Concept Hub Classes. I recommend this Coaching institute and the same institute to all of the viewers of Tanda.</p>
+                    </div>
+                    <div class="stsTestimonial_content">
+                      <h3>Ahmad Maaz Inaam</h3>
+                      <span>Student</span>
+                      <p>DAV Academy Tanda</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container" id="Contact">
+       <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">Contact Us</h2>
+              <span></span>
+            </div>
+          </div>
+       </div>
+       <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8">
+           <div class="contact_form wow fadeInLeft">
+              <form class="submitphoto_form" id="contact1" method="POST" action="https://formspree.io/concepthubclasses@gmail.com">
+                    <input type="text" name="name" class="wp-form-control wpcf7-text" id="contact_name" placeholder="Your name*">
+                    <input type="email" name="email" class="wp-form-control wpcf7-email" id="contact_email" placeholder="Email address*">
+                    <input type="text" name="phone" class="wp-form-control wpcf7-email" id="contact_phone" placeholder="Phone Number*">
+                <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" name="Message" placeholder="What would you like to tell us"></textarea>	
+                <input type="submit" value="Send" class="wpcf7-submit">
+              </form>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-4">
+           <div class="contact_address wow fadeInRight">
+             <h3>Address</h3>
+             <div class="address_group">
+               <p>Mohalla - Mumtazganj Near Sufiyan Kirana Store, Tanda, Ambedkar Nagar 224190</p>
+               <p>Phone: 8960357410, 8604765157</p>
+               <p>Email: <a href="mailto:concepthubclasses@gmail.com" target="_top">concepthubclasses@gmail.com</a></p>
+             </div>
+             <div class="address_group">
+				<p>Follow us</p>
+              <ul class="footer_social">
+                <li><a href="https://www.facebook.com/concepthubclasses/" class="soc_tooltip" title="" data-placement="top" data-toggle="tooltip" data-original-title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </section>
+    <section id="googleMap">
+      <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://wego.here.com/directions/mix//Concept-Hub-Classes,-Near-Sufiyaan-Kirana-Store,-Mohalla-Mumtazganj,-Tanda,-Uttar-Pradesh,-India-224190:e-eyJuYW1lIjoiQ29uY2VwdCBIdWIgQ2xhc3NlcyIsImFkZHJlc3MiOiJOZWFyIFN1Zml5YWFuIEtpcmFuYSBTdG9yZSwgTW9oYWxsYSBNdW10YXpnYW5qLCBUYW5kYSwgVXR0YXIgUHJhZGVzaCwgSW5kaWEgMjI0MTkwIiwibGF0aXR1ZGUiOjI2LjU0OTIxLCJsb25naXR1ZGUiOjgyLjY1ODEzLCJwcm92aWRlck5hbWUiOiJmYWNlYm9vayIsInByb3ZpZGVySWQiOjExODczMjkyOTEyOTkxMzZ9?map=26.54921,82.65813,15,normal&fb_locale=en_US"></iframe>
+    </section>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomLeft">
+                  <p> Copyright &copy;<span id="copyright"></span> All Rights Reserved</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomRight">
+                <p>Designed by Mohammad Ashkeen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/queryloader2.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>window.jQuery.fn.modal || document.write('<script src="js/bootstrap.min.js"><\/script>')</script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.animate-enhanced.min.js"></script>
+    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+    <script src='js/jquery.circliful.min.js'></script>
+    <script src="js/jquery.tosrus.min.all.js"></script>   
+    <script src="js/custom.js"></script>
+  </body>
+</html>

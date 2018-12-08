@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Concept Hub Classes</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Best coaching classes in Tanda Ambedkar Nagar, For entrance of AMU, JMI and Polytechnic"/>
+    <meta name="Keywords" content="Coaching,Institute,AMU,JMI,Polytechnic,Crash Course,Concept,Concept Hub,Concept Hub Classes,Concept classes,Classes Hub"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link href="css/slick.css" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='css/jquery.circliful.css'>  
+    <link rel="stylesheet" href="css/animate.css">
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />
+    <link id="switcher" href="css/themes/green-theme.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="css/jquery.min.js"><\/script>')</script>
+	<script>
+    (function($) {
+        $(function() {
+            if ($('body').css('color') !== 'rgb(51, 51, 51)') {
+                $('head').prepend('<link rel="stylesheet" href="css/bootstrap.min.css">');
+            }
+        });
+    })(window.jQuery);
+	</script>
+    <script>
+        $(document).ready(function(){
+			$("#lang option:eq(2)").attr("selected","selected");
+			$("#lang").on("change", function(){
+				var $this = $(this).val();
+				if($this == 1){
+					location.href = "index.html";
+				}
+			});
+            var $contactForm = $('#contact'), $submit = $("input[type='submit']"), $name = $("input[name='name']"), $email = $("input[name='email']"), $phone = $("input[name='phone']");
+            var $modal = $("#myModal"), $modalLabel = $("#myModalLabel"), $modalBody = $(".modal-body");
+            var form_data = $("form").serialize(), form_url = $("form").attr("action"), form_method = $("form").attr("method").toUpperCase();
+            $submit.click(function(event){
+                event.preventDefault();  
+                    var reName = /^[A-Za-z ]{2,20}$/;
+                    var is_name=reName.test($name.val());
+                    var reMail = /^[A-Za-z0-9._]{2,15}\@[a-zA-Z0-9-]{2,15}\.[a-zA-Z.]{2,10}$/;
+                    var is_email=reMail.test($email.val());
+                    var rePhone = /^[7|8|9]{1}[0-9]{9}$/;
+					var is_phone=rePhone.test($phone.val());
+					if(!is_name){
+                        $modal.modal("show");
+                        $modalLabel.text("Error!");
+                        $modalBody.text('Please enter a valid name');
+                    }
+					else if(!is_email){
+                        $modal.modal("show");
+                        $modalLabel.text("Error!");
+                        $modalBody.text('Please enter a valid email address');
+                    }
+				    else if(!is_phone){
+                        $modal.modal("show");
+                        $modalLabel.text("Error!");
+                        $modalBody.text('Please enter a valid phone number');
+                    }            
+                    else{
+                    $.ajax({
+                            url: 'https://formspree.io/concepthubclasses@gmail.com',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            dataType: 'json',
+                            beforeSend: function() {
+                                $submit.val('Sending message...');
+                            },
+                            success: function(data) {
+                                $modal.modal("show");
+                                $modalLabel.text("Success!");
+                                $modalBody.text('Your message has been successfully sent!');
+                                $submit.val('Sent');
+                                $("input[type='text']").val("");
+                                $("input[type='email']").val("");
+                                $("textarea").val("");
+                            },
+                            error: function(err) {
+                                $modal.modal("show");
+                                $modalLabel.text("Error!");
+                                $modalBody.text('Ops, there was an error.');
+                                $submit.val('Send');
+                            }
+                        });
+                    }
+                });
+    });
+    </script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+	  <script>
+			$(document).ready(function(){
+				$("[class~='wow']").each(function(){
+					$(this).removeClass("wow");
+				});
+			});
+		</script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="wpcf7-submit" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="scrollToTop" href="#"></a>
+    <header id="header">
+      <div class="menu_area" id="Home">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+			  <a href="index.html"><img  class="logo" src="img/logo.png" alt="logo"/></a>
+              <a class="navbar-brand" href="index.html">Concept Hub <span>Classes</span></a>              
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Reviews</a></li>               
+                <li><a href="#">Contact</a></li>
+                <li><select id="lang" class="form-control">
+                        <option value="0">Choose Language</option>
+                        <option value="1">English</option>
+                        <option value="2">Hindi</option>
+                    </select>
+                </li>
+              </ul>           
+            </div><!--/.nav-collapse -->
+          </div>     
+        </nav>  
+      </div>
+    </header>
+    <section id="slider">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="slider_area">
+            <div id="slides">
+              <ul class="slides-container">                          
+                <li>
+                  <img src="img/slider/1.jpg" alt="img">
+                  <div class="slider_caption slider_right_caption">
+                    <marquee class="running">एएमयू, JMI, बीएचयू और उत्तर प्रदेश पॉलिटेक्निक / डिप्लोमा के लिए विशेष कक्षाएं क्रैश कोर्स</marquee>
+                    <h2>बेहतर शिक्षा पर्यावरण</h2>
+                    <p>संकल्पना हब कक्षाएं एक कोचिंग अकादमी है जो छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने में संबंधित है। हम मानते हैं कि हर छात्र व्यक्तिगत ध्यान देने की जरूरत है उसकी / उसके असली क्षमता का पता लगाने के लिए।</p>
+                  </div>
+                  </li>
+                <li>
+                  <img src="img/slider/2.jpg" alt="img">
+                   <div class="slider_caption slider_right_caption">
+                    <marquee class="running">एएमयू, JMI, बीएचयू और उत्तर प्रदेश पॉलिटेक्निक / डिप्लोमा के लिए विशेष कक्षाएं क्रैश कोर्स</marquee>
+                    <h2>बेहतर शिक्षा पर्यावरण</h2>
+                    <p>संकल्पना हब कक्षाएं एक कोचिंग अकादमी है जो छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने में संबंधित है। हम मानते हैं कि हर छात्र व्यक्तिगत ध्यान देने की जरूरत है उसकी / उसके असली क्षमता का पता लगाने के लिए।</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/slider/3.jpg" alt="img">
+                  <div class="slider_caption slider_right_caption">
+                    <marquee class="running">एएमयू, JMI, बीएचयू और उत्तर प्रदेश पॉलिटेक्निक / डिप्लोमा के लिए विशेष कक्षाएं क्रैश कोर्स</marquee>
+                    <h2>बेहतर शिक्षा पर्यावरण</h2>
+                    <p>संकल्पना हब कक्षाएं एक कोचिंग अकादमी है जो छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने में संबंधित है। हम मानते हैं कि हर छात्र व्यक्तिगत ध्यान देने की जरूरत है उसकी / उसके असली क्षमता का पता लगाने के लिए।</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/slider/4.jpg" alt="img">
+                  <div class="slider_caption slider_right_caption">
+                    <marquee class="running">एएमयू, JMI, बीएचयू और उत्तर प्रदेश पॉलिटेक्निक / डिप्लोमा के लिए विशेष कक्षाएं क्रैश कोर्स</marquee>
+                    <h2>बेहतर शिक्षा पर्यावरण</h2>
+                    <p>संकल्पना हब कक्षाएं एक कोचिंग अकादमी है जो छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने में संबंधित है। हम मानते हैं कि हर छात्र व्यक्तिगत ध्यान देने की जरूरत है उसकी / उसके असली क्षमता का पता लगाने के लिए।</p>
+                  </div>
+                </li>
+              </ul>
+              <nav class="slides-navigation">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="aboutUs">
+      <div class="container" id="About">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="aboutus_area wow fadeInLeft">
+            <h2 class="titile">हमारे बारे में</h2>
+             <span></span>
+            <p>संकल्पना हब वर्ग का मानना ​​है कि शिक्षा के समारोह में अधिकता से सोचने के लिए और गंभीर लगता है एक सिखाना है। पेशेवर क्षमता विषय को पढ़ाने के लिए। पर्याप्त बुनियादी ढांचा, अतिरिक्त स्थान के साथ एक केंद्रीय जगह उनके निजी सामान रखने के लिए में स्थित है। उपलब्ध कराना गुणवत्ता की शिक्षा, अध्ययन सामग्री, सक्षम कर्मचारी, विशेषज्ञों से ऑनलाइन मदद करते हैं। हम स्कूल स्तर के लिए बेहतरीन प्रशिक्षण कार्यक्रमों अब समय काफी कुछ किया के लिए इस विषय में से एक प्रदान किया गया है। हमारे सहयोगी और जानकार शिक्षकों आप अपने अध्ययन के संकट से बाहर की मदद और अपने चेहरे पर मुस्कान लाना होगा। इसमें कक्षा शिक्षण और ऑफ स्कूल ट्यूशन के तरीके के बीच कई मतभेद हैं। इसे ध्यान में रखते, सीएचसी टीम अन्य शिक्षाविदों के साथ काम किया अद्वितीय ट्यूशन प्रणाली (सीएचसी), जो रिचर्ड ई मेयर के 'मल्टीमीडिया प्रशिक्षण की संज्ञानात्मक सिद्धांत' पर आधारित है बनाने के लिए। सीएचसी एक उच्च संरचित शैक्षणिक प्रणाली है। एक 9 चरण सबक संगठनात्मक संरचना के उपयोग के माध्यम से। सीएचसी कि अत्यधिक छात्र केंद्रित कर रहे हैं इस तरह के मन मानचित्रण, ऐसे में आराम बक्से के रूप में आत्म निदान उपकरण, और सीखने के परिणामों के रूप में संज्ञानात्मक उपकरणों का उपयोग भी शामिल है।</p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    <section id="whyUs">
+      <div class="row">        
+        <div class="col-lg-12 col-sm-12">
+          <div class="whyus_top">
+            <div class="container">
+              <!-- Why us top titile -->
+              <div class="row">
+                <div class="col-lg-12 col-md-12"> 
+                  <div class="title_area">
+                    <h2 class="title_two">हम क्यों?</h2>
+                    <span></span> 
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-desktop"></span>
+                    </div>
+                    <h3>प्रौद्योगिकी जागरूकता</h3>
+                    <p>प्रौद्योगिकियों के साथ parallels चलने के लिए अच्छी तरह से प्रशंसा गंतव्य की ओर जाता है। हम शिक्षा और प्रौद्योगिकियों का मिश्रण है और हमारे छात्र को प्रदान इतना है कि वे असली दुनिया के साथ interact करने की क्षमता के साथ दूर कर सकते हैं।</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-users"></span>
+                    </div>
+                    <h3>बेस्ट संकाय</h3>
+                    <p>हम सबसे संकाय है, हमारे छात्रों के लिए उत्कृष्टता शिक्षा और मार्गदर्शन प्रदान करने और उन्हें क्षेत्र प्रतियोगी हैं।</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-flask"></span>
+                    </div>
+                    <h3>व्यवहारिक प्रशिक्षण</h3>
+                    <p>हम व्यावहारिक प्रशिक्षण में विश्वास करते हैं। हम सबसे उपयुक्त बुनियादी ढांचे जहां हमारे छात्रों को और अधिक का पता लगाने कर सकते हैं प्रदान कर रहे हैं।</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <span class="fa fa-support"></span>
+                    </div>
+                    <h3>समर्थन</h3>
+                    <p>हम सबसे अच्छा समर्थन और हमारे छात्रों को मार्गदर्शन प्रदान करने और उसे अंदर अच्छी तरह से सुसज्जित प्रतिभा, जहां वे अपने स्वयं के व्यक्तित्व बना सकते हैं पहचानने रहे हैं। हम में विश्वास करते हैं "आप अतीत कि particularly है, यह गर्व नहीं साधन नहीं है, आप एक आशाजनक भविष्य नहीं हो सकता"।</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <section id="ourCourses">
+      <div class="container" id="Courses">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">हमारे पाठ्यक्रम</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ourCourse_content">
+              <ul class="course_nav">
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-1.jpg" />
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">कक्षा मैं - वी</a></h3>
+                    <p class="singCourse_price">विषयों</p>
+                    <p> विशेष शिक्षा, विज्ञान, भौतिकी, Mathematics, इतिहास, हिन्दी, कंप्यूटर, अंग्रेजी</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-2.jpg" />
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">छठी कक्षा - आठवीं</a></h3>
+                    <p class="singCourse_price">विषयों</p>
+                    <p>वाणिज्य विषय, अर्थशास्त्र, अंग्रेजी, भूगोल, हिंदी, इतिहास, रसायन विज्ञान, गणित, भौतिकी, जीव विज्ञान, विशेष शिक्षा, सामाजिक अध्ययन</p>
+                    </div>
+                  </div>
+                </li> 
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-3.jpg" />
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">ग्यारहवीं कक्षा - एक्स</a></h3>
+                    <p class="singCourse_price">विषयों</p>
+                    <p>अर्थशास्त्र, वाणिज्य विषयों, रसायन विज्ञान, जीव विज्ञान, बीजगणित, अंग्रेजी, भूगोल, हिंदी, फिजिक्स, गणित, इतिहास</p>
+                    </div>
+                  </div>
+                </li>  
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="img/course-4.jpg" />
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">ग्यारहवीं कक्षा - बारहवीं</a></h3>
+                    <p class="singCourse_price">विषयों</p>
+                    <p>रसायन विज्ञान, वाणिज्य विषय, अर्थशास्त्र, अंग्रेजी, बीजगणित, जीव विज्ञान, वनस्पति विज्ञान, गणित, राजनीति विज्ञान, भौतिक विज्ञान, सांख्यिकी, गृह विज्ञान, इतिहास, हिन्दी, भूगोल, समाजशास्त्र</p>
+                    </div>
+                  </div>
+                </li>                 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ourTutors">
+      <div class="container" id="Faculty">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">हमारे संकाय</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ourTutors_content">
+              <!-- Start Tutors nav -->
+              <ul class="tutors_nav">
+			  <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/asif.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Asif</h3>
+                      <span>प्रबंध निदेशक</span>
+                      <p>योग्यता - B.Com. and MSW</p>
+                      <p>ईमेल -  <a href="mailto:mohdasif212@gmail.com">mohdasif212@gmail.com</a></p>
+                      <p>संपर्क नंबर - 8960357410</p>
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/zees.jpg" alt="Teacher"/>                  
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Zeeshan Adil</h3>
+                      <span>कैरियर सलाहकार</span>
+                      <p>योग्यता - B.Tech.</p>
+                      <p>ईमेल - <a href="mailto:zees007@rediffmail.com">zees007@rediffmail.com</a></p>
+                      <p>संपर्क नंबर -  9899551691</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/athar.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Athar</h3>
+                      <span>रसायन विज्ञान शिक्षक</span>
+                      <p>योग्यता - B.Sc. and BTC</p>
+                      <p>ईमेल - <a href="mailto:atharamu5315@gmail.com">atharamu5315@gmail.com</a></p>
+                      <p>संपर्क नंबर -  7669814423</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/tarique.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Tarique</h3>
+                      <span>भौतिक विज्ञान के अध्यापक</span>
+                      <p>योग्यता - B.Sc. and B.Ed.</p>
+                      <p>ईमेल - <a href="mailto:tariqmd93@gmail.com">tariqmd93@gmail.com</a></p>
+                      <p>संपर्क नंबर -  7275929850</p>
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/salman.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Salman Anis</h3>
+                      <span>भौतिक विज्ञान के अध्यापक</span>
+                      <p>योग्यता - B.Tech.</p>
+                      <p>ईमेल - <a href="mailto:salmananis5@gmail.com">salmananis5@gmail.com</a></p>
+                      <p>संपर्क नंबर -  8604589822</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/raziq.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Razique</h3>
+                      <span>गणित शिक्षक</span>
+                      <p>योग्यता - B.Sc. and B.Ed.</p>
+                      <p>ईमेल - <a href="mailto:raziquemd99@gmail.com">raziquemd99@gmail.com</a></p>
+                      <p>संपर्क नंबर -  9044077804</p>
+                    </div>
+                  </div>
+                </li>
+				<li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/anwar.jpg" alt="Teacher"/>                  
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd. Anwar</h3>
+                      <span>गणित शिक्षक</span>
+                      <p>योग्यता - B.Sc. and BTC</p>
+                      <p>ईमेल - <a href="mailto:mohdanwar5330@gmail.com">mohdanwar5330@gmail.com</a></p>
+                      <p>संपर्क नंबर -  8423728810</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/alam.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Mohd Alam</h3>
+                      <span>गणित शिक्षक</span>
+                      <p>योग्यता - B.Sc.</p>
+                      <p>ईमेल - <a href="mailto:alamm037@gmail.com">alamm037@gmail.com</a></p>
+                      <p>संपर्क नंबर -  9044317063</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/shams.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Shamsul Laqa</h3>
+                      <span>भौतिक विज्ञान के अध्यापक</span>
+                      <p>योग्यता - Diploma and B. Tech(EE)</p>
+                      <p>ईमेल - <a href="mailto:laqashams5272@gmail.com">laqashams5272@gmail.com</a></p>
+                      <p>संपर्क नंबर -  8604783829</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_tutors">
+                    <div class="tutors_thumb">
+                      <img src="img/sultan.jpg" alt="Teacher"/>                      
+                    </div>
+                    <div class="singTutors_content">
+                      <h3 class="tutors_name">Sultan Altamash</h3>
+                      <span>जीव विज्ञान शिक्षक</span>
+                      <p>योग्यता - B.Sc, M.Sc, B.ed. &amp; MA(Education)</p>
+                      <p>ईमेल - <a href="mailto:laqashams5272@gmail.com">saltamash490@gmail.com</a></p>
+                      <p>संपर्क नंबर -  8604783829</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="studentsTestimonial">
+      <div class="container" id="Reviews">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">हमारे छात्र का क्या कहना है</h2>
+              <span></span> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="studentsTestimonial_content">              
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>मैं अवधारणा हब कक्षाओं में छात्र होने पर गर्व है। यह इसका सिर्फ गुरुकुल की तरह है, जहां गुरु की तरह शिक्षकों और की तरह थे वहाँ shisheya वातावरण में जहां छात्रों को वास्तव में शैक्षणिक के साथ-साथ प्रतियोगिताओं के लिए तैयार करने की जरूरत है।</p>
+                    </div>
+                    <div class="stsTestimonial_content">
+                      <h3>Tabish Hasan</h3>                      
+                      <span>छात्र</span>
+					  <p>डीएवी अकादमी टांडा</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>मैं व्यक्तिगत रूप से सभी संकल्पना हब शैक्षणिक संकायों के लिए धन्यवाद और मेरी अकादमिक कैरियर बनाने के लिए प्रबंधन का समर्थन है। मैं विशेष रूप से कोर टीम सीएचसी जो मेरे लिए अतिरिक्त मील चला गया है और व्यक्तिगत संदेह समाशोधन सत्रों और अवधारणा को समझने के साथ कोचिंग कक्षाओं के बाद भी एक बहुत मदद की है करने के लिए धन्यवाद।</p>
+                    </div>
+                    <div class="stsTestimonial_content">
+                      <h3>Syed Ayaan Ahmad</h3>                      
+                      <span>छात्र</span>
+                      <p>एएमयू + 2</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End single student testimonial -->
+                <!-- start single student testimonial -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p>संकल्पना हब शैक्षणिक अच्छी कोचिंग टांडा में शैक्षणिक कोचिंग उपलब्ध कराने में से एक है। मैं इस समीक्षा लिख ​​रहा हूँ क्योंकि वे मुझे एक बहुत अच्छी तरह से दिशा में पढ़ाया जाता है और अब मैं अवधारणा हब वर्ग के लिए बहुत आभारी हूँ। मैं इस कोचिंग संस्थान और टांडा के दर्शकों के सभी के लिए एक ही संस्थान सलाह देते हैं।</p>
+                    </div>
+                    <div class="stsTestimonial_content">
+                      <h3>Ahmad Maaz Inaam</h3>
+                      <span>छात्र</span>
+                      <p>डीएवी अकादमी टांडा</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container" id="Contact">
+       <div class="row">
+          <div class="col-lg-12 col-md-12"> 
+            <div class="title_area">
+              <h2 class="title_two">हमसे संपर्क करें</h2>
+              <span></span>
+            </div>
+          </div>
+       </div>
+       <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8">
+           <div class="contact_form wow fadeInLeft">
+              <form class="submitphoto_form" id="contact" method="POST" action="https://formspree.io/concepthubclasses@gmail.com">
+                    <input type="text" name="name" class="wp-form-control wpcf7-text" id="contact_name" placeholder="Your name*">
+                    <input type="email" name="email" class="wp-form-control wpcf7-email" id="contact_email" placeholder="Email address*">
+                    <input type="text" name="phone" class="wp-form-control wpcf7-email" id="contact_phone" placeholder="Phone Number*">
+                <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" name="Message" placeholder="What would you like to tell us"></textarea>	
+                <input type="submit" value="भेजना" class="wpcf7-submit">
+              </form>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-4">
+           <div class="contact_address wow fadeInRight">
+             <h3>पता</h3>
+             <div class="address_group">
+               <p>मोहल्ला - Mumtazganj पास Sufiyan किराना स्टोर, टांडा, अम्बेडकर नगर 224190</p>
+               <p>फोन: 8960357410, 8604765157</p>
+               <p>ईमेल: <a href="mailto:concepthubclasses@gmail.com" target="_top">concepthubclasses@gmail.com</a></p>
+             </div>
+             <div class="address_group">
+				<p>हमारा अनुसरण करो</p>
+              <ul class="footer_social">
+                <li><a href="https://www.facebook.com/concepthubclasses/" class="soc_tooltip" title="" data-placement="top" data-toggle="tooltip" data-original-title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </section>
+    <section id="googleMap">
+      <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://wego.here.com/directions/mix//Concept-Hub-Classes,-Near-Sufiyaan-Kirana-Store,-Mohalla-Mumtazganj,-Tanda,-Uttar-Pradesh,-India-224190:e-eyJuYW1lIjoiQ29uY2VwdCBIdWIgQ2xhc3NlcyIsImFkZHJlc3MiOiJOZWFyIFN1Zml5YWFuIEtpcmFuYSBTdG9yZSwgTW9oYWxsYSBNdW10YXpnYW5qLCBUYW5kYSwgVXR0YXIgUHJhZGVzaCwgSW5kaWEgMjI0MTkwIiwibGF0aXR1ZGUiOjI2LjU0OTIxLCJsb25naXR1ZGUiOjgyLjY1ODEzLCJwcm92aWRlck5hbWUiOiJmYWNlYm9vayIsInByb3ZpZGVySWQiOjExODczMjkyOTEyOTkxMzZ9?map=26.54921,82.65813,15,normal&fb_locale=en_US"></iframe>
+    </section>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomLeft">
+                  <p>कॉपीराइट &copy;<span id="copyright"></span> सर्वाधिकार सुरक्षित</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomRight">
+                <p>Mohammad Ashkeen द्वारा डिज़ाइन</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/queryloader2.min.js" type="text/javascript"></script>
+    <script src="js/wow.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.animate-enhanced.min.js"></script>
+    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+    <script src="js/jquery.tosrus.min.all.js"></script>   
+    <script src="js/custom.js"></script>
+  </body>
+</html>
